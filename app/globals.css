@@ -4,3 +4,44 @@
   font-family: outfit;
   font-family: ovo;
 }
+
+/* Custom dark mode implementation */
+:root {
+  --text-primary: #000000;
+  --bg-primary: #ffffff;
+  --bg-secondary: rgba(255, 255, 255, 0.5);
+  --border-color: rgb(107, 114, 128);
+  --menu-bg: #fef2f2; /* rose-50 */
+}
+
+.dark {
+  --text-primary: #ffffff;
+  --bg-primary: black; /* gray-800 */
+  --bg-secondary: rgba(31, 41, 55, 0.5); /* gray-800 with transparency */
+  --border-color: rgb(75, 85, 99); /* gray-600 */
+  --menu-bg: #1f2937; /* gray-800 */
+}
+
+/* Apply custom styles for dark mode */
+body {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+}
+
+.custom-nav {
+  background-color: var(--bg-secondary);
+}
+
+.custom-menu {
+  background-color: var(--menu-bg);
+  color: var(--text-primary);
+}
+
+.custom-nav-links {
+  color: var(--text-primary);
+}
+
+.custom-border {
+  border-color: var(--border-color);
+}
+
