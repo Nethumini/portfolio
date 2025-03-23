@@ -4,7 +4,7 @@ import {toolsData} from '@/assets/assets'
 import Image from 'next/image';
 import React from 'react'
 
-const About = () => {
+const About = ({ isDarkMode }) => {
   return (
     <div id='about' className='w-full px-[12%] py-0 scroll-mt-20'>
       <h4 className='text-center mb-2 pt-5 text-lg font-Ovo'>Introduction</h4>
@@ -20,24 +20,41 @@ const About = () => {
              with prestigious organizations, contributin to their success and growth.</p>
 
             <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
-              {infoList.map(({icon,iconDark,title,description},
-              index) => (
-                <li className='bg-white border border-gray-200 rounded-xl p-6 cursor-pointer 
-                  hover:bg-gray-50 hover:-translate-y-2 duration-300 hover:shadow-lg transition-all group' 
-                key={index}>
-                  <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4 
-                  group-hover:bg-black transition-colors duration-300">
+            {infoList.map(({ icon, iconDark, title, description }, index) => (
+              <li 
+                className={`${isDarkMode 
+                  ? 'bg-white-500 border-gray-700 hover:bg-gray-900' 
+                  : 'bg-white border-gray-200 hover:bg-gray-50'} 
+                  border rounded-xl p-6 cursor-pointer 
+                  hover:-translate-y-2 duration-300 hover:shadow-lg transition-all group`} 
+                key={index}
+              >
+                <div className={`${isDarkMode 
+                  ? 'bg-blue-900 group-hover:bg-white' 
+                  : 'bg-blue-100 group-hover:bg-black'} 
+                  w-12 h-12 rounded-full flex items-center justify-center mb-4 
+                  transition-colors duration-300`}
+                >
+                  <Image 
+                    src={isDarkMode ? (iconDark || icon) : icon} 
+                    alt={title} 
+                    className={`w-6 ${isDarkMode 
+                      ? 'group-hover:brightness-0 group-hover:invert-0' 
+                      : 'group-hover:brightness-0 group-hover:invert'} 
+                      transition-all duration-300`}
+                  />
+                </div>
+                <h3 className={`my-4 font-semibold text-lg ${isDarkMode ? 'text-white' : 'text-gray-700'}`}>
+                  {title}
+                </h3>
+                <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} text-sm`}>
+                  {description}
+                </p>
+              </li>
+            ))}
+          </ul>
 
-                  <Image src={icon} alt={title} className='w-6 group-hover:brightness-0 group-hover:invert 
-                  transition-all duration-300'/>
-                  </div>
-                  <h3 className='my-4 font-semibold text-lg text-gray-700'>{title}</h3>
-                  <p className='text-gray-600 text-sm'>{description}</p>
-                </li>
-              ))}
-            </ul>
-
-            <h4 className='my-6 text-gray-700 font-Ovo'>Tools I use</h4>
+            <h4 className={`${isDarkMode ? 'text-white' : 'text-gray-700'} my-6 font-Ovo`}>Tools I use</h4>
 
             <ul className='flex items-center gap-3 sm:gap-5'>
               {toolsData.map((tool, index)=>(
