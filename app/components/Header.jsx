@@ -42,11 +42,13 @@ const Header = ({isDarkMode}) => {
          initial={{opacity:0}}
          whileInView={{opacity:1}}
          transition={{duration:0.6, delay:0.8}}
-         className='flex items-center gap-4 '>
-         <a target='_blank' href='https://github.com/Nethumini' className='text-blue-500 hover:underline'>Github</a>
-         <p> | </p>
+         className='flex items-center gap-4 mt-3 mb-3 '>
+         <a target='_blank' href='https://github.com/Nethumini' className='text-blue-500 hover:underline'>
+         <Image src={isDarkMode ? assets.github_dark : assets.github} className='w-6' alt=''></Image>
+         </a>
          <a target='_blank' href='https://www.linkedin.com/in/tharinda-pathirana-374092255/' 
-         className='text-blue-500 hover:underline'>LinkedIn</a>
+         className='text-blue-500 hover:underline'><Image src={assets.linkedin1}
+         className='w-5.5' alt=''></Image></a>
          </motion.div>
 
          <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
