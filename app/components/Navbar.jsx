@@ -37,7 +37,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
      justify-between z-50 ${isScroll ? "backdrop-blur-lg shadow-sm custom-nav" : ""}`}>
       <a href="#top">
         <Image 
-          src={assets.logo} 
+          src={isDarkMode ? assets.logo_dark : assets.logo} 
           alt="" 
           className='w-50 cursor-pointer mr-14' 
         />

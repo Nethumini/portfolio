@@ -16,8 +16,8 @@ import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
 import profile_img from './profile-img.png';
-import download_icon from './download-icon.png';
-import download_icon_white from './download_icon_white.png';
+import download_icon from './download_icon.png';
+import download_icon_dark from './download_icon_dark.png';
 import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
 import moon_icon from './moon_icon.png';
@@ -36,6 +36,10 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import work_1 from './work-1.png';
+import work_2 from './work-2.jpg';
+import work_3 from './work-3.jpg';
+import work_4 from './work-4.png';
 
 export const assets = {
     user_image,
@@ -57,7 +61,7 @@ export const assets = {
     mail_icon_dark,
     profile_img,
     download_icon,
-    download_icon_white,
+    download_icon_dark,
     hand_icon,
     header_bg_color,
     moon_icon,
@@ -75,29 +79,41 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    work_1,
+    work_2,
+    work_3,
+    work_4
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        title: 'To-Do List App',
+        description: 'Web App',
+        date:'2025 january',
+        bgImage: 'https://res.cloudinary.com/dpyhuivh1/image/upload/v1742830079/Todo_te8tsp.png',
+        link:'https://github.com/Nethumini/Fullstack_ToDo-App'
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+        title: 'Agrofarma Site',
+        description: 'Web Project',
+        date:'2024.Dec - 2025-Feb',
+        bgImage: 'https://res.cloudinary.com/dpyhuivh1/image/upload/v1742831008/aaaaa_umzrsp.png',
+        link:'http://agrofarma.fwh.is/'
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
+        title: 'Chat App',
+        description: 'Web App',
+        date:'2025.Feb - Present',
+        bgImage: 'https://res.cloudinary.com/dpyhuivh1/image/upload/v1742831078/work-3_1_gvfbxx.jpg',
+        link:'https://github.com/Nethumini/fullstack-chat-app'
     },
     {
         title: 'UI/UX designing',
         description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        date:'2024.Dec - 2025-Feb',
+        bgImage: 'https://res.cloudinary.com/dpyhuivh1/image/upload/v1742829402/samples/cup-on-a-table.jpg',
+        link:'https://github.com/Nethumini/fullstack-chat-app'
     },
 ]
 
