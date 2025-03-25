@@ -18,10 +18,10 @@ const Footer = ({isDarkMode}) => {
         <p>@ 2025 Tharinda Pathirana. All right reserved.</p>
         <ul className='flex items-center gap-10 justify-center mt-4 sm:mt-0'>
           <li>
-            <a target='_blank' href='https://github.com/Nethumini'>Github</a>
+            <a target='_blank' href='https://github.com/Nethumini'  className='text-blue-500 hover:underline'>Github</a>
           </li>
           <li>
-            <a target='_blank' href='https://www.linkedin.com/in/tharinda-pathirana-374092255/'>LinkedIn</a>
+            <a target='_blank' href='https://www.linkedin.com/in/tharinda-pathirana-374092255/' className='text-blue-500 hover:underline'>LinkedIn</a>
           </li>
         </ul>
       </div>
