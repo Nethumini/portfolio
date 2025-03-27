@@ -47,7 +47,7 @@ const Header = ({isDarkMode}) => {
          <Image src={isDarkMode ? assets.github_dark : assets.github} className='w-6' alt=''></Image>
          </a>
          <a target='_blank' href='https://www.linkedin.com/in/tharinda-pathirana-374092255/' 
-         className='text-blue-500 hover:underline'><Image src={assets.linkedin1}
+         className='text-blue-500 hover:underline'><Image src={isDarkMode ? assets.linkedin1_dark : assets.linkedin1}
          className='w-5.5' alt=''></Image></a>
          </motion.div>
 

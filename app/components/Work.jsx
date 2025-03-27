@@ -29,7 +29,8 @@ function Work({ isDarkMode }) {
         transition={{duration:0.5, delay:0.7}}
         className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
             Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise
-            in front-end development.
+            in front-end development. i am passionate about building user-friendly applications with modern
+            technologies.
         </motion.p>
         <motion.div 
         initial={{opacity:0}}

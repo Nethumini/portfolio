@@ -11,8 +11,8 @@ import figma from './figma.png';
 import git from './git.png';
 import github from './github.png';
 import github_dark from './github_dark.png';
-import linkedin from './linkedin.png';
 import linkedin1 from './linkedin1.png';
+import linkedin1_dark from './linkedin1_dark.png';
 import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
@@ -59,8 +59,8 @@ export const assets = {
     git,
     github,
     github_dark,
-    linkedin,
     linkedin1,
+    linkedin1_dark,
     mongodb,
     right_arrow_white,
     logo,
@@ -117,8 +117,8 @@ export const workData = [
         link:'https://github.com/Nethumini/fullstack-chat-app'
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: '',
+        description: '',
         date:'2024.Dec - 2025-Feb',
         bgImage: 'https://res.cloudinary.com/dpyhuivh1/image/upload/v1742829402/samples/cup-on-a-table.jpg',
         link:'https://github.com/Nethumini/fullstack-chat-app'
