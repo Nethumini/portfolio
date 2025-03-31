@@ -48,7 +48,7 @@ const Header = ({isDarkMode}) => {
          </a>
          <a target='_blank' href='https://www.linkedin.com/in/tharinda-pathirana-374092255/' 
          className='text-blue-500 hover:underline'><Image src={isDarkMode ? assets.linkedin1_dark : assets.linkedin1}
-         className='w-5.5' alt=''></Image></a>
+         className='w-6' alt=''></Image></a>
          </motion.div>
 
          <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
@@ -65,7 +65,7 @@ const Header = ({isDarkMode}) => {
             initial={{y: 30, opacity:0}}
             whileInView={{y:0, opacity:1.2}}
             transition={{duration:0.6, delay:1}}
-            href='/sample-resume.pdf' download className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2'> 
+            href='/tharinda-resume.pdf' download className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2'> 
                 My resume<Image src={isDarkMode ? assets.download_icon_dark : assets.download_icon} alt='' className='w-4' /></motion.a>
          </div>
     </div>

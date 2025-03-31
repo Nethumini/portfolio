@@ -117,11 +117,11 @@ export const workData = [
         link:'https://github.com/Nethumini/fullstack-chat-app'
     },
     {
-        title: '',
-        description: '',
-        date:'2024.Dec - 2025-Feb',
+        title: 'Healthcare App',
+        description: 'Mobile Application',
+        date:'2025.Feb - Present',
         bgImage: 'https://res.cloudinary.com/dpyhuivh1/image/upload/v1742829402/samples/cup-on-a-table.jpg',
-        link:'https://github.com/Nethumini/fullstack-chat-app'
+        link:'https://github.com/SumindaBandara/HelthcareMobileApp.git'
     },
 ]
 

@@ -42,9 +42,11 @@ const About = ({ isDarkMode }) => {
         whileInView={{opacity:1}}
         transition={{duration:0.6, delay:0.8}}
         className='flex-1'>
-          <p className='mb-10 max-w-2xl font-Ovo'>I am an experianced Fullstack developer with over a decade 
-            of professional expertise in the field. throughout my career, i have had the privilege of colloborating
-             with prestigious organizations, contributin to their success and growth.</p>
+          <p className='mb-10 max-w-2xl font-Ovo'>
+            I am a motivated 3rd-year undergraduate seeking a Software Engineer Internship.
+            Passionate about full-stack development, eager to learn, and ready to apply
+             my skills to real-world projects while contributing to team success.
+             </p>
 
             <motion.ul 
             initial={{opacity:0}}
